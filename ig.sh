@@ -12,7 +12,7 @@ cyan='\e[1;36m'
 white='\e[1;37m'
 
 #thread limit => kurangi boleh tapi jangan naikin :v
-limit=1000000
+limit=290
 
 #banner
 clear
@@ -54,7 +54,7 @@ touch target
 
 case $opt in
     1) #menu 1
-        read -p $'\e[37m[\e[34m?\e[37m] Cari dengan nama   : \e[1;33m' ask
+        read -p $'\e[37m[\e[34m?\e[37m] Cari dengan nama   : \e[1;33m' ridwan
         collect=$(curl -s "https://www.instagram.com/web/search/topsearch/?context=blended&query=${ask}" | jq -r '.users[].user.username' > target)
         echo $'\e[37m[\e[34m+\e[37m] ditemukan         : \e[1;33m'$collect''$(< target wc -l ; echo -e "${white}user")
         read -p $'[\e[1;34m?\e[1;37m] Password percobaan   : \e[1;33m' pass
