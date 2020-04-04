@@ -29,7 +29,7 @@ do
 done
 
 #banner
-echo 'RECODED by : Rahmad Alif'
+echo 'RECODED by : RIDWA DIKA'
 echo 'warga bumi'
 #menu
 echo -e '''
